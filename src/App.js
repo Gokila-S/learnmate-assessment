@@ -100,20 +100,20 @@ function App() {
   const renderNavigation = () => (
     <div className="app-navigation">
       <div className="nav-header">
-        <h2>🎓 LearnMate Assessment System</h2>
+        <h2>LearnMate Assessment System</h2>
       </div>
       <div className="nav-buttons">
         <button 
           className={`nav-btn ${currentView === 'admin' ? 'active' : ''}`}
           onClick={() => handleViewChange('admin')}
         >
-          👨‍💼 Admin Panel
+          Admin Panel
         </button>
         <button 
           className={`nav-btn ${currentView === 'student' ? 'active' : ''}`}
           onClick={() => handleViewChange('student')}
         >
-          👨‍🎓 Student Portal
+          Student Portal
         </button>
       </div>
     </div>

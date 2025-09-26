@@ -231,7 +231,7 @@ const AssessmentCreationForm = () => {
 
           {totalMarks !== parseInt(watch('totalMarks')) && (
             <div className="warning-alert">
-              ⚠️ The sum of question marks ({totalMarks}) doesn't match the total marks ({watch('totalMarks')}).
+              ⚠️ Warning: The sum of question marks ({totalMarks}) doesn't match the total marks ({watch('totalMarks')}).
             </div>
           )}
 

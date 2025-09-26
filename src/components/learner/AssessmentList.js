@@ -88,7 +88,7 @@ const AssessmentList = ({ assessments, user, onStartAssessment }) => {
 
         <div className="stat-card">
           <div className="stat-icon-container green">
-            <span className="stat-icon">✅</span>
+            <span className="stat-icon">✓</span>
           </div>
           <div className="stat-content">
             <p className="stat-label">Completed</p>
@@ -150,11 +150,11 @@ const AssessmentList = ({ assessments, user, onStartAssessment }) => {
                   <span className="detail-text">{assessment.duration} minutes</span>
                 </div>
                 <div className="detail-item">
-                  <span className="detail-icon">📊</span>
+                  <span className="detail-icon">📝</span>
                   <span className="detail-text">{assessment.totalMarks} marks</span>
                 </div>
                 <div className="detail-item">
-                  <span className="detail-icon">✅</span>
+                  <span className="detail-icon">✓</span>
                   <span className="detail-text">Pass: {assessment.passingMarks} marks</span>
                 </div>
                 <div className="detail-item">
@@ -229,7 +229,7 @@ const AssessmentList = ({ assessments, user, onStartAssessment }) => {
 
       {getFilteredAssessments().length === 0 && (
         <div className="empty-state">
-          <div className="empty-icon">📝</div>
+          <div className="empty-icon">📋</div>
           <h3>No assessments found</h3>
           <p>
             {activeTab === 'all' 

@@ -686,7 +686,7 @@ const TakeAssessment = ({ assessment, onComplete, onBack }) => {
         <div className="modal-overlay">
           <div className="modal-content warning-modal">
             <h3>
-              {warningType === '5min' ? '⚠️ 5 Minutes Remaining!' : '🚨 1 Minute Remaining!'}
+              {warningType === '5min' ? '⏰ 5 Minutes Remaining!' : '⏰ 1 Minute Remaining!'}
             </h3>
             <p>
               {warningType === '5min' 

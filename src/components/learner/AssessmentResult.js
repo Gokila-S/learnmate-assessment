@@ -25,12 +25,12 @@ const AssessmentResult = ({ result, assessment, onReturnToList, onRetake, onGene
   };
 
   const getGradeEmoji = () => {
-    if (scorePercentage >= 90) return '🏆';
-    if (scorePercentage >= 80) return '🥇';
-    if (scorePercentage >= 70) return '🥈';
-    if (scorePercentage >= 60) return '🥉';
-    if (scorePercentage >= 50) return '👍';
-    return '📚';
+    if (scorePercentage >= 90) return 'A+';
+    if (scorePercentage >= 80) return 'A';
+    if (scorePercentage >= 70) return 'B';
+    if (scorePercentage >= 60) return 'C';
+    if (scorePercentage >= 50) return 'D';
+    return 'F';
   };
 
   const getEncouragementMessage = () => {
@@ -149,7 +149,7 @@ const AssessmentResult = ({ result, assessment, onReturnToList, onRetake, onGene
         <div className={`result-header ${isPassed ? 'passed' : 'failed'}`}>
           <div className="result-status">
             <div className="status-icon">
-              {isPassed ? '✅' : '❌'}
+              {isPassed ? 'PASS' : 'FAIL'}
             </div>
             <div className="status-text">
               <h1 className="status-title">
@@ -195,7 +195,7 @@ const AssessmentResult = ({ result, assessment, onReturnToList, onRetake, onGene
             
             <div className="details-grid">
               <div className="detail-card">
-                <div className="detail-icon">✅</div>
+                <div className="detail-icon">✓</div>
                 <div className="detail-number">{result.correctAnswers}</div>
                 <div className="detail-label">Correct</div>
               </div>

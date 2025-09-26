@@ -44,7 +44,7 @@ const AssessmentInstructions = ({ assessment, onBeginAssessment, onBack }) => {
               </div>
             </div>
             <div className="overview-item">
-              <div className="overview-icon">🔄</div>
+              <div className="overview-icon">A</div>
               <div className="overview-content">
                 <h3>Attempts</h3>
                 <p>{attemptsRemaining} remaining</p>
@@ -117,11 +117,11 @@ const AssessmentInstructions = ({ assessment, onBeginAssessment, onBack }) => {
               <div className="requirement-text">Stable internet connection</div>
             </div>
             <div className="requirement-item">
-              <div className="requirement-icon">🖥️</div>
+              <div className="requirement-icon">💻</div>
               <div className="requirement-text">Desktop or laptop recommended</div>
             </div>
             <div className="requirement-item">
-              <div className="requirement-icon">🔊</div>
+              <div className="requirement-icon">⚙️</div>
               <div className="requirement-text">Enable JavaScript and cookies</div>
             </div>
           </div>
